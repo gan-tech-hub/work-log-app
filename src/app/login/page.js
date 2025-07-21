@@ -47,7 +47,7 @@ export default function LoginPage() {
             placeholder="メールアドレス"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full border rounded px-3 py-2"
+            className="w-full border rounded px-3 py-2 text-black"
             required
           />
           <input
@@ -55,7 +55,7 @@ export default function LoginPage() {
             placeholder="パスワード"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-            className="w-full border rounded px-3 py-2"
+            className="w-full border rounded px-3 py-2 text-black"
             required
           />
           <button

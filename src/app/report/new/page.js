@@ -61,7 +61,7 @@ export default function WorkReportForm() {
                 type="date"
                 value={date}
                 onChange={(e) => setDate(e.target.value)}
-                className="w-full border rounded-lg px-3 py-2"
+                className="w-full border rounded-lg px-3 py-2 text-black"
               />
             </div>
 
@@ -72,7 +72,7 @@ export default function WorkReportForm() {
                 placeholder="例）バグ修正、レビュー対応"
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
-                className="w-full border rounded-lg px-3 py-2"
+                className="w-full border rounded-lg px-3 py-2 text-black"
               ></textarea>
             </div>
 
@@ -84,7 +84,7 @@ export default function WorkReportForm() {
                 min="0"
                 value={hours}
                 onChange={(e) => setHours(e.target.value)}
-                className="w-full border rounded-lg px-3 py-2"
+                className="w-full border rounded-lg px-3 py-2 text-black"
               />
             </div>
 

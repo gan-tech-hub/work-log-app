@@ -145,14 +145,14 @@ export default function ReportGraphPage() {
             type="date"
             value={startDate}
             onChange={(e) => setStartDate(e.target.value)}
-            className="border rounded p-2"
+            className="border rounded p-2 text-black"
           />
           <span className="self-center">〜</span>
           <input
             type="date"
             value={endDate}
             onChange={(e) => setEndDate(e.target.value)}
-            className="border rounded p-2"
+            className="border rounded p-2 text-black"
           />
           <button
             onClick={fetchReports}

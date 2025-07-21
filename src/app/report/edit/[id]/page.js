@@ -80,7 +80,7 @@ export default function EditReportPage({ params }) {
               type="date"
               value={date}
               onChange={(e) => setDate(e.target.value)}
-              className="w-full border rounded-lg px-3 py-2"
+              className="w-full border rounded-lg px-3 py-2 text-black"
               required
             />
           </div>
@@ -91,7 +91,7 @@ export default function EditReportPage({ params }) {
               rows="3"
               value={task}
               onChange={(e) => setTask(e.target.value)}
-              className="w-full border rounded-lg px-3 py-2"
+              className="w-full border rounded-lg px-3 py-2 text-black"
               required
             ></textarea>
           </div>
@@ -104,7 +104,7 @@ export default function EditReportPage({ params }) {
               min="0"
               value={hours}
               onChange={(e) => setHours(e.target.value)}
-              className="w-full border rounded-lg px-3 py-2"
+              className="w-full border rounded-lg px-3 py-2 text-black"
               required
             />
           </div>
