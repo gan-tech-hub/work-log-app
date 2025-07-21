@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Work Log App
 
-## Getting Started
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)
+![Next.js](https://img.shields.io/badge/Framework-Next.js-blue)
+![Supabase](https://img.shields.io/badge/Backend-Supabase-green)
 
-First, run the development server:
+作業時間と作業内容を記録・可視化できる**シンプルな作業報告管理アプリ**です。
 
+---
+
+## 🚀 デプロイURL
+
+[https://work-log-app-nine.vercel.app/](https://work-log-app-nine.vercel.app/)
+
+---
+
+## 🛠️ 機能概要
+
+✅ 作業日・作業時間・作業内容の記録  
+✅ 記録一覧表示・編集・削除  
+✅ 作業時間のグラフ化（Recharts使用）  
+✅ CSV/PDFでのデータエクスポート  
+✅ Supabase認証によるログイン機能  
+✅ スマホ対応（レスポンシブ対応）
+
+---
+
+## 🖥️ 技術スタック
+
+### フロントエンド
+- **Next.js 15 (App Router)**
+- **React**
+- **Tailwind CSS**
+
+### バックエンド / 認証
+- **Supabase**（認証・DB）
+
+### データベース
+- Supabase PostgreSQL
+
+### デプロイ先
+- **Vercel**
+
+### コード管理
+- **Git / GitHub**
+
+### その他ツール・技術
+- **Recharts**（グラフ描画）
+- **jsPDF + autoTable**（PDF出力）
+- **PapaParse**（CSV出力）
+- **環境変数管理（Vercel）**
+
+---
+
+## 🛠️ セットアップ方法（ローカル）
+
+1️⃣ **リポジトリをクローン**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/gan-tech-hub/work-log-app.git
+cd work-log-app
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2️⃣ 依存関係をインストール
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+3️⃣ 環境変数を設定
+ルートに .env.local を作成し、以下を記載：
+```
+NEXT_PUBLIC_SUPABASE_URL=あなたのSupabaseURL
+NEXT_PUBLIC_SUPABASE_ANON_KEY=あなたのSupabaseAnonKey
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4️⃣ ローカル起動
+```bash
+npm run dev
+```
 
-## Learn More
+ブラウザで http://localhost:3000 にアクセス。
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+📝 ライセンス
+MIT
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+👤 作成者
+桜庭祐斗
+[GitHub](https://github.com/gan-tech-hub)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📷 スクリーンショット例
+以下は画面のイメージ例です：
+
+・**TOPページ画面**
+<img width="494" height="209" alt="image" src="https://github.com/user-attachments/assets/8fe61b81-45a6-47db-832d-a1cf72f3336f" />
+
+・**ログイン画面**
+<img width="436" height="347" alt="image" src="https://github.com/user-attachments/assets/9117b622-3fe9-4ba5-ae0e-97e93b9954cb" />
+
+・**ダッシュボード画面**
+<img width="505" height="384" alt="image" src="https://github.com/user-attachments/assets/88723c7d-387e-4b04-b0d6-d7661de493b3" />
+
+・**入力フォーム画面**
+<img width="630" height="584" alt="image" src="https://github.com/user-attachments/assets/823234a7-a173-4b93-a6f7-1f5fff12c800" />
+
+・**入力一覧画面**
+<img width="715" height="789" alt="image" src="https://github.com/user-attachments/assets/6baa0cba-c47e-49b7-8dfd-0ed508fa05fb" />
+
+・**グラフ画面**
+<img width="719" height="642" alt="image" src="https://github.com/user-attachments/assets/00234b98-7910-49db-8bc4-6dc63c63bdb4" />
