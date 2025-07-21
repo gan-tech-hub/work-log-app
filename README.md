@@ -82,33 +82,48 @@ npm run dev
 ---
 
 📝 ライセンス
+
 MIT
 
 ---
 
 👤 作成者
+
 桜庭祐斗
+
 [GitHub](https://github.com/gan-tech-hub)
 
 ---
 
 📷 スクリーンショット例
+
 以下は画面のイメージ例です：
 
 ・**TOPページ画面**
+
 <img width="494" height="209" alt="image" src="https://github.com/user-attachments/assets/8fe61b81-45a6-47db-832d-a1cf72f3336f" />
 
+
 ・**ログイン画面**
+
 <img width="436" height="347" alt="image" src="https://github.com/user-attachments/assets/9117b622-3fe9-4ba5-ae0e-97e93b9954cb" />
 
+
 ・**ダッシュボード画面**
+
 <img width="505" height="384" alt="image" src="https://github.com/user-attachments/assets/88723c7d-387e-4b04-b0d6-d7661de493b3" />
 
+
 ・**入力フォーム画面**
+
 <img width="630" height="584" alt="image" src="https://github.com/user-attachments/assets/823234a7-a173-4b93-a6f7-1f5fff12c800" />
 
+
 ・**入力一覧画面**
+
 <img width="715" height="789" alt="image" src="https://github.com/user-attachments/assets/6baa0cba-c47e-49b7-8dfd-0ed508fa05fb" />
 
+
 ・**グラフ画面**
+
 <img width="719" height="642" alt="image" src="https://github.com/user-attachments/assets/00234b98-7910-49db-8bc4-6dc63c63bdb4" />
