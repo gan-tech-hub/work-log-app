@@ -89,7 +89,7 @@ MIT
 
 👤 作成者
 
-桜庭祐斗
+* 桜庭祐斗
 
 [GitHub](https://github.com/gan-tech-hub)
 
