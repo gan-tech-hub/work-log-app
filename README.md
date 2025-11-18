@@ -91,7 +91,7 @@ MIT
 
 * 桜庭祐斗
 
-[GitHub](https://github.com/gan-tech-hub)
+[GitHub - gan-tech-hub](https://github.com/gan-tech-hub)
 
 ---
 
