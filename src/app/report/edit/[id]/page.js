@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabase';
+import { useSupabaseClient, useUser } from '@supabase/auth-helpers-react';
 import { useRouter } from 'next/navigation';
 import { use } from 'react';
 
@@ -9,6 +9,8 @@ export default function EditReportPage({ params }) {
   const resolvedParams = use(params);  // Promiseをunwrap
   const id = resolvedParams.id;
   const router = useRouter();
+  const supabase = useSupabaseClient();
+  const user = useUser();
 
   const [date, setDate] = useState('');
   const [task, setTask] = useState('');
@@ -18,11 +20,14 @@ export default function EditReportPage({ params }) {
 
   // 初期データ取得
   useEffect(() => {
+    if (!user) return;
+
     const fetchReport = async () => {
       const { data, error } = await supabase
         .from('reports')
         .select('*')
         .eq('id', id)
+        .eq('user_id', user.id)
         .single();
 
       if (error) {
@@ -36,7 +41,7 @@ export default function EditReportPage({ params }) {
     };
 
     fetchReport();
-  }, [id]);
+  }, [id, supabase, user]);
 
   const handleUpdate = async (e) => {
     e.preventDefault();
@@ -44,7 +49,8 @@ export default function EditReportPage({ params }) {
     const { error } = await supabase
       .from('reports')
       .update({ date, task, hours: parseFloat(hours) })
-      .eq('id', id);
+      .eq('id', id)
+      .eq('user_id', user.id);
 
     if (error) {
       console.error('更新失敗:', error.message);
